@@ -1,0 +1,20 @@
+{
+  "name": "tutorialws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.18.0",
+    "axios": "^0.19.2",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "playwright": "^1.52.0"
+  }
+}
