@@ -21,7 +21,9 @@ client.on('messageCreate', async (message) => {
     // Configurações do scraping
     try {
       message.reply('🔍 Realizando scraping, aguarde...');
-      const browser = await chromium.launch();
+      const browser = await chromium.launch({
+        headless: true,  // Rodando em modo headless
+      });
       const context = await browser.newContext({
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
       });
